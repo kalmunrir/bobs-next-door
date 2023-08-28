@@ -1,9 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 
-function Search() {
+function Search({updateSearch}) {
+
     return(
         <div className="search-container">
-            <input type="text" placeholder="Search names..." onChange={() => console.log("Searching...")} />
+            <input type="text" placeholder="Search names..." onChange={updateSearch} />
         </div>
     );
 }
